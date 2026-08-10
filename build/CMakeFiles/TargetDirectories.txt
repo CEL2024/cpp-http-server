@@ -1,0 +1,3 @@
+/home/elija/projects/cpp-http-server/build/CMakeFiles/server.dir
+/home/elija/projects/cpp-http-server/build/CMakeFiles/edit_cache.dir
+/home/elija/projects/cpp-http-server/build/CMakeFiles/rebuild_cache.dir

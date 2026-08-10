@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/elija/projects/cpp-http-server/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
