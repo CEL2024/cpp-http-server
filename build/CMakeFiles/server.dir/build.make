@@ -72,10 +72,24 @@ include CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/codegen:
 .PHONY : CMakeFiles/server.dir/codegen
 
+CMakeFiles/server.dir/src/main.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/main.cpp.o: /home/elija/projects/cpp-http-server/src/main.cpp
+CMakeFiles/server.dir/src/main.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/elija/projects/cpp-http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/main.cpp.o -MF CMakeFiles/server.dir/src/main.cpp.o.d -o CMakeFiles/server.dir/src/main.cpp.o -c /home/elija/projects/cpp-http-server/src/main.cpp
+
+CMakeFiles/server.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elija/projects/cpp-http-server/src/main.cpp > CMakeFiles/server.dir/src/main.cpp.i
+
+CMakeFiles/server.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elija/projects/cpp-http-server/src/main.cpp -o CMakeFiles/server.dir/src/main.cpp.s
+
 CMakeFiles/server.dir/src/socket.cpp.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/src/socket.cpp.o: /home/elija/projects/cpp-http-server/src/socket.cpp
 CMakeFiles/server.dir/src/socket.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/elija/projects/cpp-http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/server.dir/src/socket.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/elija/projects/cpp-http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/server.dir/src/socket.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/socket.cpp.o -MF CMakeFiles/server.dir/src/socket.cpp.o.d -o CMakeFiles/server.dir/src/socket.cpp.o -c /home/elija/projects/cpp-http-server/src/socket.cpp
 
 CMakeFiles/server.dir/src/socket.cpp.i: cmake_force
@@ -86,18 +100,52 @@ CMakeFiles/server.dir/src/socket.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/socket.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elija/projects/cpp-http-server/src/socket.cpp -o CMakeFiles/server.dir/src/socket.cpp.s
 
+CMakeFiles/server.dir/src/HTTPparser.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/HTTPparser.cpp.o: /home/elija/projects/cpp-http-server/src/HTTPparser.cpp
+CMakeFiles/server.dir/src/HTTPparser.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/elija/projects/cpp-http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/server.dir/src/HTTPparser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/HTTPparser.cpp.o -MF CMakeFiles/server.dir/src/HTTPparser.cpp.o.d -o CMakeFiles/server.dir/src/HTTPparser.cpp.o -c /home/elija/projects/cpp-http-server/src/HTTPparser.cpp
+
+CMakeFiles/server.dir/src/HTTPparser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/HTTPparser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elija/projects/cpp-http-server/src/HTTPparser.cpp > CMakeFiles/server.dir/src/HTTPparser.cpp.i
+
+CMakeFiles/server.dir/src/HTTPparser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/HTTPparser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elija/projects/cpp-http-server/src/HTTPparser.cpp -o CMakeFiles/server.dir/src/HTTPparser.cpp.s
+
+CMakeFiles/server.dir/src/ClientConnections.cpp.o: CMakeFiles/server.dir/flags.make
+CMakeFiles/server.dir/src/ClientConnections.cpp.o: /home/elija/projects/cpp-http-server/src/ClientConnections.cpp
+CMakeFiles/server.dir/src/ClientConnections.cpp.o: CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/elija/projects/cpp-http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/server.dir/src/ClientConnections.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/server.dir/src/ClientConnections.cpp.o -MF CMakeFiles/server.dir/src/ClientConnections.cpp.o.d -o CMakeFiles/server.dir/src/ClientConnections.cpp.o -c /home/elija/projects/cpp-http-server/src/ClientConnections.cpp
+
+CMakeFiles/server.dir/src/ClientConnections.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/src/ClientConnections.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elija/projects/cpp-http-server/src/ClientConnections.cpp > CMakeFiles/server.dir/src/ClientConnections.cpp.i
+
+CMakeFiles/server.dir/src/ClientConnections.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/src/ClientConnections.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elija/projects/cpp-http-server/src/ClientConnections.cpp -o CMakeFiles/server.dir/src/ClientConnections.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/src/socket.cpp.o"
+"CMakeFiles/server.dir/src/main.cpp.o" \
+"CMakeFiles/server.dir/src/socket.cpp.o" \
+"CMakeFiles/server.dir/src/HTTPparser.cpp.o" \
+"CMakeFiles/server.dir/src/ClientConnections.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
+server: CMakeFiles/server.dir/src/main.cpp.o
 server: CMakeFiles/server.dir/src/socket.cpp.o
+server: CMakeFiles/server.dir/src/HTTPparser.cpp.o
+server: CMakeFiles/server.dir/src/ClientConnections.cpp.o
 server: CMakeFiles/server.dir/build.make
 server: CMakeFiles/server.dir/compiler_depend.ts
 server: CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/elija/projects/cpp-http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/elija/projects/cpp-http-server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

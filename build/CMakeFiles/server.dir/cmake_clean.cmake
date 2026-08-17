@@ -1,5 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/server.dir/link.d"
+  "CMakeFiles/server.dir/src/ClientConnections.cpp.o"
+  "CMakeFiles/server.dir/src/ClientConnections.cpp.o.d"
+  "CMakeFiles/server.dir/src/HTTPparser.cpp.o"
+  "CMakeFiles/server.dir/src/HTTPparser.cpp.o.d"
+  "CMakeFiles/server.dir/src/main.cpp.o"
+  "CMakeFiles/server.dir/src/main.cpp.o.d"
   "CMakeFiles/server.dir/src/socket.cpp.o"
   "CMakeFiles/server.dir/src/socket.cpp.o.d"
   "server"

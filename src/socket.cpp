@@ -1,18 +1,22 @@
-#include <iostream>
 #include <string>
 #include <cstring>
 #include <iostream>   // For printing
 #include <vector>     // For the vector container
-#include <algorithm>  // For sorting
+
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
 
-int main () {
+#include "socket.h"
+#include "HTTPparser.h"
+namespace fs = std::filesystem;
 
-    // first print
-    std::cout << "Socket programming in C++" << std::endl;
+// make server start function
+// make close and cleanup function
+
+
+int startServer () {
 
     // creates server socket
     int s_fd;
@@ -22,7 +26,6 @@ int main () {
         perror("socket");
         return 1;
     }
-    std::cout << "socket() succeeded. fd = " << s_fd << std::endl;
 
     int port = 8080;
 
@@ -30,7 +33,7 @@ int main () {
     server_addr.sin_family = AF_INET;
     server_addr.sin_port = htons(port);
     server_addr.sin_addr.s_addr = INADDR_ANY;
-    
+        
 
     // binds the socket to the port and address
     int bind_result = bind(s_fd, (struct sockaddr*)&server_addr, sizeof(server_addr));
@@ -40,10 +43,9 @@ int main () {
         close(s_fd);
         return 1;
     }
-    std::cout << "bind() succeeded" << std::endl;
 
-    // listens for incoming connections on the server socket with a backlog of 5
-    int listen_result = listen(s_fd, 5);
+    // listens for incoming connections on the server socket with a backlog of 10
+    int listen_result = listen(s_fd, 10);
     
 
     if (listen_result == -1) {
@@ -52,6 +54,12 @@ int main () {
         return 1;
     }
     std::cout << "listening on port 8080" << std::endl;
+
+    return s_fd;
+}
+
+
+int test_accept(int s_fd) {
 
     // creates client socket and accepts incoming connections
     struct sockaddr_in client_addr;
@@ -69,10 +77,12 @@ int main () {
               << client_fd << std::endl;
 
 
+    
     // creates buffer to store received data from client
-    int buffer_size = 1024;
+    int buffer_size = 4000;
     std::vector<char> buffer(buffer_size);
 
+    // recv/send will be implemented into the worker thread not here
     // while loop to continuously receive data from the client and send a response
     while (true) {
 
@@ -90,15 +100,27 @@ int main () {
             break;
         }
 
-        std::cout << "Received " << received_bytes << " bytes from client: "
-                << std::string(buffer.data(), received_bytes) << std::endl;
+        // initializes the request object, parses the request, and includes a test command for linux.
+        HttpRequest request;
+        size_t var1 = buffer.size();
+        size_t var2 = 0;
 
-        const char* response = "message received. Hi!\n";
+
+        
+        request.parseRequest(buffer, var1, var2);
+        request.printRequest();
+        // printf 'POST /test HTTP/1.1\r\nHost: localhost\r\nContent-Length: 12\r\nContent-Type: text/plain\r\n\r\nHello World!' | nc localhost 8080
+        HttpResponse r(request.getPath());
+        std::vector<char>resp;
+        r.handleRequest(request);
+
+        // creates the response from the data within the request object and sends the response to the client.
+        const char* response = r.parseResponse(resp, 0);
 
         ssize_t sent_bytes = send(
             client_fd,
             response,
-            strlen(response),
+            resp.size(),
             0
         );
 
@@ -114,5 +136,4 @@ int main () {
     close(s_fd);
 
     return 0;
-
 }

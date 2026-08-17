@@ -8,6 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/elija/projects/cpp-http-server/src/ClientConnections.cpp" "CMakeFiles/server.dir/src/ClientConnections.cpp.o" "gcc" "CMakeFiles/server.dir/src/ClientConnections.cpp.o.d"
+  "/home/elija/projects/cpp-http-server/src/HTTPparser.cpp" "CMakeFiles/server.dir/src/HTTPparser.cpp.o" "gcc" "CMakeFiles/server.dir/src/HTTPparser.cpp.o.d"
+  "/home/elija/projects/cpp-http-server/src/main.cpp" "CMakeFiles/server.dir/src/main.cpp.o" "gcc" "CMakeFiles/server.dir/src/main.cpp.o.d"
   "/home/elija/projects/cpp-http-server/src/socket.cpp" "CMakeFiles/server.dir/src/socket.cpp.o" "gcc" "CMakeFiles/server.dir/src/socket.cpp.o.d"
   "" "server" "gcc" "CMakeFiles/server.dir/link.d"
   )

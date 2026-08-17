@@ -129,6 +129,78 @@ server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+src/ClientConnections.o: src/ClientConnections.cpp.o
+.PHONY : src/ClientConnections.o
+
+# target to build an object file
+src/ClientConnections.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ClientConnections.cpp.o
+.PHONY : src/ClientConnections.cpp.o
+
+src/ClientConnections.i: src/ClientConnections.cpp.i
+.PHONY : src/ClientConnections.i
+
+# target to preprocess a source file
+src/ClientConnections.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ClientConnections.cpp.i
+.PHONY : src/ClientConnections.cpp.i
+
+src/ClientConnections.s: src/ClientConnections.cpp.s
+.PHONY : src/ClientConnections.s
+
+# target to generate assembly for a file
+src/ClientConnections.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/ClientConnections.cpp.s
+.PHONY : src/ClientConnections.cpp.s
+
+src/HTTPparser.o: src/HTTPparser.cpp.o
+.PHONY : src/HTTPparser.o
+
+# target to build an object file
+src/HTTPparser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/HTTPparser.cpp.o
+.PHONY : src/HTTPparser.cpp.o
+
+src/HTTPparser.i: src/HTTPparser.cpp.i
+.PHONY : src/HTTPparser.i
+
+# target to preprocess a source file
+src/HTTPparser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/HTTPparser.cpp.i
+.PHONY : src/HTTPparser.cpp.i
+
+src/HTTPparser.s: src/HTTPparser.cpp.s
+.PHONY : src/HTTPparser.s
+
+# target to generate assembly for a file
+src/HTTPparser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/HTTPparser.cpp.s
+.PHONY : src/HTTPparser.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 src/socket.o: src/socket.cpp.o
 .PHONY : src/socket.o
 
@@ -162,6 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
+	@echo "... src/ClientConnections.o"
+	@echo "... src/ClientConnections.i"
+	@echo "... src/ClientConnections.s"
+	@echo "... src/HTTPparser.o"
+	@echo "... src/HTTPparser.i"
+	@echo "... src/HTTPparser.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... src/socket.o"
 	@echo "... src/socket.i"
 	@echo "... src/socket.s"
