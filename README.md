@@ -1,0 +1,1 @@
+This project is not finished. I have 2-3 more commits planned. The next commit is fully implementing a simple worker queue and epoll, then after that I will use so_reuseport and have multiple epoll instances per thread which is a little more difficult to implement but will be faster.
